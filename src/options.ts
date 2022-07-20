@@ -88,7 +88,7 @@ export interface Options {
         checkInterval: number;
         nodeTimeout: number,
         masterTimeout: number;
-        port: number;
+        port: number|string;
         prefix: string;
         ignoreProcess: boolean;
         broadcast: string;

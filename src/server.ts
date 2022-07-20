@@ -179,10 +179,10 @@ export class Server {
             prometheus: {
                 prefix: 'soketi_',
             },
-            port: 9601,
+            port: parseInt(process.env.PORT) || 3000,
         },
         mode: 'full',
-        port: 6001,
+        port: parseInt(process.env.PORT) || 3000,
         pathPrefix: '',
         presence: {
             maxMembersPerChannel: 100,
@@ -705,7 +705,7 @@ export class Server {
             });
 
             resolve(server);
-        });
+        });Number(process.env.PORT)
     }
 
     /**
