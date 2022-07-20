@@ -1,3 +1,37 @@
+# Soketi custom fork for easy deployment to heroku
+
+The modifications made were simple and this is an early stage integration.
+
+## What should i do to deploy it?
+
+This step is easy, you can reate a fork of this repo, login to your heroku account and then deploy it, currently it does not support the cluster mode.
+
+## What if i want to run it locally?
+
+You can download this repo running
+
+``` cmd 
+git pull https://github.com/jalexmelendez/soketi-heroku master
+```
+
+and then run
+
+``` cmd 
+npm i
+```
+
+then if you want to modify the Typescript code run
+``` cmd 
+npm run build
+```
+
+### Run your Soketi instance
+``` cmd 
+npm run start
+```
+
+# Soketi docs
+
 > The 🇷🇺 Russian invasion of 🇺🇦 Ukraine breaches any law, including the UN Charter. [#StandWithUkraine](https://github.com/vshymanskyy/StandWithUkraine)
 
 > Open-source is not about political views, but rather humanitar views. It's code by the people for the people. Unprovoked, unjustifiable and despicable action that is killing civilians is not tolerated. The [Renoki Co.](https://github.com/renoki-co) subsidiaries (including Soketi) has taken action to move away from Russian software and dependencies and block any access from Russia within their projects.
